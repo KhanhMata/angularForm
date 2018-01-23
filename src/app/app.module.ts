@@ -11,7 +11,7 @@ import { QuestionControlService } from './question-control.service';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
 import { QuestionService } from './question.service';
-
+import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { QuestionService } from './question.service';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CustomerDashboardModule
   ],
   providers: [QuestionControlService, QuestionService],
   bootstrap: [AppComponent]
